@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Interest Calculator</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <h1>Interest Calculator</h1>
+            <div class="input-group">
+                <label for="principal">Principal (P):</label>
+                <input type="number" id="principal">
+            </div>
+            <div class="input-group">
+                <label for="rate">Interest Rate (R):</label>
+                <input type="number" id="rate">
+            </div>
+            <div class="input-group">
+                <label for="time">Time (T):</label>
+                <input type="number" id="time">
+            </div>
+            <div class="input-group">
+                <label for="interest-type">Interest Type:</label>
+                <select id="interest-type">
+                    <option value="simple">Simple Interest</option>
+                    <option value="compound">Compound Interest</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <button onclick="calculate()">Calculate</button>
+            </div>
+            <div class="output-group">
+                <h2>Result:</h2>
+                <div id="result"></div>
+            </div>
+        </div>
+        <script src="home.js"></script>
+    </body>
+</html>
